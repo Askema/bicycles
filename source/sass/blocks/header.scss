@@ -60,6 +60,7 @@
 }
 
 .header__title-wrapper {
+  text-align: left;
   & p {
     @include text(20px, 32px, $white, 300);
     letter-spacing: -0.1px;
@@ -75,6 +76,7 @@
   }
 
   @media (max-width: $desktop-width) {
+    text-align: center;
     background: url('../img/headerBike.jpg') no-repeat center top;
 
     @media (min-resolution: 2dppx) {
@@ -92,6 +94,7 @@
   }
 
   @media (max-width: $tablet-width) {
+    text-align: center;
     background: url('../img/headerBike-mobile.jpg') no-repeat center top;
 
     @media (min-resolution: 2dppx) {
@@ -108,7 +111,7 @@
     }
 
     & br {
-      display: block;
+      display: none;
     }
   }
 }
