@@ -1,0 +1,51 @@
+.map {
+
+  & title {
+    @media (max-width: $desktop-width) {
+      line-height: 30px;
+    }
+
+    @media (max-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  & iframe {
+    width: 957px;
+    height: 530px;
+    margin-bottom: 39px;
+    background: url('../img/map.jpg') no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url('../img/map@2x.jpg') no-repeat;
+    }
+
+    @media (max-width: $desktop-width) {
+      width: 91%;
+      margin: 0 auto 20px auto;
+      height: 545px;
+    }
+
+    @media (max-width: $tablet-width) {
+      height: 250px;
+      margin: 0;
+      margin-bottom: 25px;
+    }
+  }
+
+  & p {
+    @include text(17px, 31px, rgba($black, 0.7), 400);
+    margin-bottom: 42px;
+
+    @media (max-width: $desktop-width) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 25px;
+      padding: 0 16px;
+    }
+  }
+}
