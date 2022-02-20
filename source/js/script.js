@@ -2,6 +2,7 @@
 var toggle = document.querySelector('.header__toggle');
 var navList = document.querySelector('.nav__list');
 
+toggle.classList.add('header__toggle--working');
 toggle.classList.add('header__toggle--open');
 navList.classList.add('nav__list--close');
 

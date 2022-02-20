@@ -5,8 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
   <link href="css/style.min.css" rel="stylesheet preload" as="style">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/opensanssemibold.woff2" as="font" type="font/woff2" crossorigin="">
+  <title>Велосипеды</title>
 </head>
 
 <body class="body">
@@ -71,6 +75,36 @@
           </li>
         </ul>
       </div>
+    </section>
+    <section class="bicycles">
+      <h2>Виды велосипедов</h2>
+      <ul>
+        <li>
+          <picture>
+            <source media="(max-width: 1023px)" srcset="img/bike01-tablet.webp 1x, img/bike01-tablet@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="img/bike01-desktop.webp 1x, img/bike01-desktop@2x.webp 2x" type="image/webp">
+            <!--<source media="(max-width: 1023px)" srcset="img/bike01-tablet.jpg 1x, img/bike01-tablet@2x.jpg 2x">-->
+            <img width="342" height="503" alt="Дорожный велосипед" srcset="img/bike01-desktop.jpg 1x, img/bike01-desktop@2x.jpg 2x">
+          </picture>
+          <h3>Дорожный велосипед</h3>
+        </li>
+        <li>
+          <picture>
+            <source media="(max-width: 1023px)" srcset="img/bike02-tablet.webp 1x, img/bike02-tablet@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="img/bike02-desktop.webp 1x, img/bike02-desktop@2x.webp 2x" type="image/webp">
+            <img width="342" height="586" alt="Горный велосипед" srcset="img/bike02-desktop.jpg 1x, img/bike02-desktop@2x.jpg 2x">
+          </picture>
+          <h3>Горный велосипед</h3>
+        </li>
+        <li>
+          <picture>
+            <source media="(max-width: 1023px)" srcset="img/bike03-tablet.webp 1x, img/bike03-tablet@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="img/bike03-desktop.webp 1x, img/bike03-desktop@2x.webp 2x" type="image/webp">
+            <img width="342" height="512" alt="Детский велосипед" srcset="img/bike03-desktop.jpg 1x, img/bike03-desktop@2x.jpg 2x">
+          </picture>
+          <h3>Детский велосипед</h3>
+        </li>
+      </ul>
     </section>
   </main>
   <footer>

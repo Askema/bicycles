@@ -1,0 +1,137 @@
+.bicycles {
+  min-width: $mobile-width;
+
+  h2 {
+    @include text (30px, 30px, $black2, 600);
+    margin-bottom: 51px;
+
+    @media (max-width: $desktop-width) {
+      font-size: 24px;
+      line-height: 41px;
+      margin-bottom: 30px;
+    }
+  }
+
+  h3 {
+    @include text (22px, 34px, $black, 600);
+    margin-top: 20px;
+  }
+
+  ul {
+    @include ul();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: $desktop-width) {
+      padding: 0 25px;
+    }
+
+    @media(max-width: $tablet-width) {
+      gap: 3.5%;
+    }
+  }
+
+  img {
+    border-radius: 10px;
+
+    @media (max-width: $desktop-width) {
+      width: 270px;
+      height: 300px;
+    }
+  }
+}
+
+.bicycles li {
+  margin-right: 3.5%;
+  position: relative;
+
+  @media(max-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.bicycles li:nth-child(1) {
+  padding-top: 10px;
+
+  @media(max-width: $desktop-width) {
+    padding: 0;
+  }
+
+  &::before {
+    @include pseudo();
+    border: 27px solid $main-color;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    left: -60px;
+    bottom: 321px;
+    z-index: -1;
+
+    @media(max-width: $desktop-width) {
+      border-width: 18px;
+      width: 127px;
+      height: 127px;
+      left: -24px;
+      bottom: 50px;
+    }
+  }
+}
+
+.bicycles li:nth-child(2) {
+  padding-top: 39px;
+
+  &::before,
+  &::after {
+    @include pseudo();
+    border: 8px solid $main-color;
+    width: 47px;
+    height: 47px;
+  }
+
+  &::before {
+    top: 18px;
+    left: -19px;
+  }
+
+  &::after {
+    bottom: 58px;
+    right: -19px;
+  }
+
+  @media(max-width: $desktop-width) {
+    padding: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.bicycles li:nth-child(3) {
+  margin-right: 0;
+
+  &::after {
+    @include pseudo();
+    border: 17px solid $main-color;
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    top: -34px;
+    right: -39px;
+
+    @media (max-width: $desktop-width) {
+      border-width: 13px;
+      width: 68px;
+      height: 68px;
+      top: -19px;
+      right: -24px;
+    }
+
+    @media (max-width: $tablet-width) {
+      top: -19px;
+      right: -15px;
+    }
+  }
+}
