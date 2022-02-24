@@ -1,76 +1,106 @@
 .video {
   background-color: $video;
   padding-top: 95px;
-  padding-bottom: 480px;
+  padding-bottom: 425px;
   margin-bottom: 150px;
   position: relative;
   min-width: 320px;
 
-  h2 {
-    @include text(30px, 30px, $white, 600);
-    margin-bottom: 20px;
-  }
-
-  p {
-    @include text(16px, 28px, $white, 300);
-    opacity: 0.7;
-    margin-bottom: 56px;
-  }
-
-  button {
-    position: absolute;
-    margin: auto;
-    width: 65px;
-    height: 65px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: transparent;
-    border: 0;
-    padding: 0;
-
-    @media (max-width: $desktop-width) {
-      width: 90px;
-      height: 90px;
-    }
-
-    @media (max-width: $tablet-width) {
-      width: 65px;
-      height: 65px;
-    }
-  }
-
-  svg {
-    width: 100%;
-    height: 100%;
-  }
-
   @media (max-width: $desktop-width) {
-    padding-bottom: 237px;
+    padding-top: 50px;
+    padding-bottom: 202px;
   }
 
   @media (max-width: $tablet-width) {
-    padding-bottom: 163px;
+    padding: 62px 15px 132px;;
   }
+}
+
+.video h2 {
+  @include text(30px, 30px, $white, 600);
+  margin-bottom: 20px;
+
+  @media (max-width: $desktop-width) {
+    @include text(24px, 30px, $white, 600);
+  }
+}
+
+.video p {
+  @include text(16px, 28px, $white, 300);
+  opacity: 0.7;
+  width: 340px;
+  margin: 0 auto 56px auto;
+
+  @media (max-width: $desktop-width) {
+    width: 429px;
+    margin: 0 auto 34px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 34px;
+  }
+}
+
+.video button {
+  position: absolute;
+  margin: auto;
+  width: 65px;
+  height: 65px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: 0;
+  padding: 0;
+
+  @media (max-width: $desktop-width) {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 65px;
+    height: 65px;
+  }
+
+  &:hover,
+  &:focus {
+    width: 90px;
+    height: 90px;
+  }
+
+  &:active {
+    width: 80px;
+    height: 80px;
+    opacity: 0.5;
+  }
+}
+
+.video svg {
+  width: 100%;
+  height: 100%;
 }
 
 .video__wrapper {
   position: absolute;
-  width: 929px;
+  width: 64.514%;
+  max-width: 929px;
   height: 522px;
-  background: $black url('../img/videoPreview.jpg') no-repeat;
-  top: 70%;
+  background: $black url('../img/videoPreview.jpg') no-repeat center;
+  top: 77%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   @media (min-resolution: 2dppx) {
-    background: $black url('../img/videoPreview@2x.jpg') no-repeat;
+    background: $black url('../img/videoPreview@2x.jpg') no-repeat center;
+    background-size: cover;
   }
 
   @media (max-width: $desktop-width) {
-    width: 65%;
+    width: 65.4%;
     height: 282px;
-    top: 80%;
+    top: 86.8%;
     left: 50%;
     background-position: center;
     background-size: contain;
@@ -79,6 +109,6 @@
   @media (max-width: $tablet-width) {
     width: 90%;
     height: 161px;
-    top: 90%;
+    top: 92%;
   }
 }

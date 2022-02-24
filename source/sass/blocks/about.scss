@@ -6,6 +6,11 @@
   }
 }
 
+.about__container {
+  max-width: 1166px;
+  margin: 0 auto;
+}
+
 .about h2 {
   @include text(30px, 30px, $black2, 600);
   margin-bottom: 50px;
@@ -39,7 +44,7 @@
   @include ul();
   display: flex;
   flex-wrap: wrap;
-  padding: 0 137px;
+  padding: 0;
   gap: 38px;
 
   @media (max-width: $desktop-width) {

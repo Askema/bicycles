@@ -76,10 +76,10 @@
 
   @media (max-width: $desktop-width) {
     text-align: center;
-    background: url('../img/headerBike.jpg') no-repeat center top;
+    background: url('../img/headerBike.jpg') no-repeat center top, linear-gradient(#0D0D0D, #101010, #202020);
 
     @media (min-resolution: 2dppx) {
-      background: url('../img/headerBike@2x.jpg') no-repeat;
+      background: url('../img/headerBike@2x.jpg') no-repeat, linear-gradient(#0D0D0D, #101010, #202020);
       background-size: cover;
       background-position: 50%;
     }
@@ -92,10 +92,10 @@
 
   @media (max-width: $tablet-width) {
     text-align: center;
-    background: url('../img/headerBike-mobile.jpg') no-repeat center top;
+    background: url('../img/headerBike-mobile.jpg') no-repeat center top, linear-gradient(#0D0D0D, #101010, #202020);
 
     @media (min-resolution: 2dppx) {
-      background: url('../img/headerBike-mobile@2x.jpg') no-repeat center top;
+      background: url('../img/headerBike-mobile@2x.jpg') no-repeat center top, linear-gradient(#0D0D0D, #101010, #202020);
       background-size: cover;
       background-position: 50%;
     }
