@@ -1,42 +1,57 @@
 .contacts {
+  padding-bottom: 98px;
+  margin-top: 32px;
 
-  & ul {
-    @include ul();
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 90px;
+  @media (max-width: $desktop-width) {
+    margin-top: 14px;
   }
 
-  & li {}
-
-  & a {
-    display: flex;
-    align-items: center;
-    position: relative;
-    @include text(16px, 32px, rgba($black, 0.5), 400);
-  }
-
-  & svg {
-    margin-right: 15px;
-    fill: none;
+  @media (max-width: $tablet-width) {
+    margin-top: 25px;
   }
 }
 
-@media (max-width: $tablet-width) {
-  .contacts {
+.contacts__list {
+  @include ul();
+  padding-right: 17px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 90px;
 
-    & ul {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    & li:not(:last-child) {
-      margin-bottom: 22.12px;
-    }
-
-    & a {
-      text-align: center;
-    }
+  @media (max-width: $desktop-width) {
+    padding-right: 11px;
   }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 12px;
+  }
+}
+
+.contacts__item--tel {
+  margin-right: 20px;
+}
+
+.contacts a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  @include text(16px, 32px, rgba($black, 0.5), 400);
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.contacts svg {
+  margin-right: 15px;
+  fill: none;
 }

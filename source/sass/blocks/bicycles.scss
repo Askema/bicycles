@@ -1,57 +1,85 @@
 .bicycles {
   min-width: $mobile-width;
+  background: $bicycles;
+  opacity: .99;
+  margin-top: 130px;
+  padding: 125px 0 127px 0;
 
-  h2 {
-    @include text (30px, 30px, $black2, 600);
-    margin-bottom: 51px;
-
-    @media (max-width: $desktop-width) {
-      font-size: 24px;
-      line-height: 41px;
-      margin-bottom: 30px;
-    }
+  @media (max-width: $desktop-width) {
+    margin-top: 49px;
+    padding: 30px 0 48px 0;
   }
 
-  h3 {
-    @include text (22px, 34px, $black, 600);
-    margin-top: 20px;
-  }
-
-  ul {
-    @include ul();
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    @media (max-width: $desktop-width) {
-      padding: 0 25px;
-    }
-
-    @media(max-width: $tablet-width) {
-      gap: 3.5%;
-    }
-  }
-
-  img {
-    border-radius: 10px;
-
-    @media (max-width: $desktop-width) {
-      width: 270px;
-      height: 300px;
-    }
+  @media (max-width: $tablet-width) {
+    padding: 30px 0 14px;
+    margin-top: 73px;
   }
 }
 
-.bicycles li {
-  margin-right: 3.5%;
-  position: relative;
+.bicycles__container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.bicycles h2 {
+  @include text (30px, 30px, $black2, 600);
+  margin-bottom: 50px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 41px;
+    margin-bottom: 30px;
+  }
+}
+
+.bicycles h3 {
+  @include text (22px, 34px, $black, 600);
+  letter-spacing: -0.5px;
+  margin-top: 16px;
+}
+
+.bicycles__list {
+  @include ul();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.5%;
+
+  @media (max-width: $desktop-width) {
+    padding: 0 64px;
+    justify-content: space-between;
+    row-gap: 29px;
+  }
 
   @media(max-width: $tablet-width) {
-    margin-right: 0;
+    padding: 0 25px;
+    gap: 0;
   }
 }
 
-.bicycles li:nth-child(1) {
+.bicycles img {
+  border-radius: 10px;
+
+  @media (max-width: $desktop-width) {
+    width: 270px;
+    height: 300px;
+  }
+}
+
+.bicycles__item {
+  position: relative;
+
+  @media (max-width: $desktop-width) {
+    width: 270px;
+    margin: 0 auto;
+  }
+
+  @media(max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.bicycles__item--road {
   padding-top: 10px;
 
   @media(max-width: $desktop-width) {
@@ -65,20 +93,24 @@
     width: 180px;
     height: 180px;
     left: -60px;
-    bottom: 321px;
+    bottom: 335px;
     z-index: -1;
 
     @media(max-width: $desktop-width) {
       border-width: 18px;
       width: 127px;
       height: 127px;
-      left: -24px;
-      bottom: 50px;
+      left: -38px;
+      bottom: 47px;
+    }
+
+    @media(max-width: $tablet-width) {
+      left: -25px;
     }
   }
 }
 
-.bicycles li:nth-child(2) {
+.bicycles__item--mountain {
   padding-top: 39px;
 
   &::before,
@@ -90,13 +122,13 @@
   }
 
   &::before {
-    top: 18px;
+    top: 21px;
     left: -19px;
   }
 
   &::after {
-    bottom: 58px;
-    right: -19px;
+    bottom: 53px;
+    right: -23px;
   }
 
   @media(max-width: $desktop-width) {
@@ -109,8 +141,7 @@
   }
 }
 
-.bicycles li:nth-child(3) {
-  margin-right: 0;
+.bicycles__item--сhildren {
 
   &::after {
     @include pseudo();
@@ -118,14 +149,14 @@
     border-radius: 50%;
     width: 95px;
     height: 95px;
-    top: -34px;
-    right: -39px;
+    top: -32px;
+    right: -36px;
 
     @media (max-width: $desktop-width) {
       border-width: 13px;
       width: 68px;
       height: 68px;
-      top: -19px;
+      top: -20px;
       right: -24px;
     }
 
