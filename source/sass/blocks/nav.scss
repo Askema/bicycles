@@ -1,5 +1,6 @@
 .nav {
   margin-bottom: 256px;
+
   @media (max-width: $desktop-width) {
     margin-bottom: 0;
   }
@@ -26,6 +27,14 @@
     left: 0;
     bottom: 0;
   }
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 0 138px 0;
+    background-color: $white;
+  }
 }
 
 .nav__list--close {
@@ -49,46 +58,40 @@
 
   @media (max-width: $desktop-width) {
     text-align: left;
+    background-color: $mobile-nav;
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
 
-.nav__link {
+.nav a {
   @include text(16px, 32px, white, 300);
   opacity: 70%;
-}
 
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
 
-@media (max-width: $desktop-width) {
+  &:active {
+    opacity: 0.5;
+  }
 
-  .nav__list {
+  @media (max-width: $desktop-width) {
+    position: relative;
+    @include text(20px, 28px, $grey, 400);
+    padding: 17px 35px 17px 16px;
     width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 100px 0 138px 0;
-    background-color: $white;
+    display: block;
+    opacity: 1;
 
-    & .nav__item {
-      background-color: $mobile-nav;
-      width: 100%;
-      margin-bottom: 30px;
-    }
-
-    & .nav__link {
-      position: relative;
-      @include text(20px, 28px, $grey, 400);
-      padding: 17px 35px 17px 16px;
-      width: 100%;
-      display: block;
-      opacity: 1;
-
-      &::after {
-        @include pseudo();
-        width: 25px;
-        height: 25px;
-        right: 16px;
-        top: 17px;
-        background: url('../img/arrow.svg') no-repeat center;
-      }
+    &::after {
+      @include pseudo();
+      width: 25px;
+      height: 25px;
+      right: 16px;
+      top: 17px;
+      background: url('../img/arrow.svg') no-repeat center;
     }
   }
 }
