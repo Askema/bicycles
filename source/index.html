@@ -77,34 +77,45 @@
       </div>
     </section>
     <section class="bicycles">
-      <h2><a name="bicycles">Виды велосипедов</a></h2>
-      <ul>
-        <li>
-          <picture>
-            <source media="(max-width: 1023px)" srcset="img/bike01-tablet.webp 1x, img/bike01-tablet@2x.webp 2x" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="img/bike01-desktop.webp 1x, img/bike01-desktop@2x.webp 2x" type="image/webp">
-            <!--<source media="(max-width: 1023px)" srcset="img/bike01-tablet.jpg 1x, img/bike01-tablet@2x.jpg 2x">-->
-            <img width="342" height="503" alt="Дорожный велосипед" srcset="img/bike01-desktop.jpg 1x, img/bike01-desktop@2x.jpg 2x">
-          </picture>
-          <h3>Дорожный велосипед</h3>
-        </li>
-        <li>
-          <picture>
-            <source media="(max-width: 1023px)" srcset="img/bike02-tablet.webp 1x, img/bike02-tablet@2x.webp 2x" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="img/bike02-desktop.webp 1x, img/bike02-desktop@2x.webp 2x" type="image/webp">
-            <img width="342" height="586" alt="Горный велосипед" srcset="img/bike02-desktop.jpg 1x, img/bike02-desktop@2x.jpg 2x">
-          </picture>
-          <h3>Горный велосипед</h3>
-        </li>
-        <li>
-          <picture>
-            <source media="(max-width: 1023px)" srcset="img/bike03-tablet.webp 1x, img/bike03-tablet@2x.webp 2x" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="img/bike03-desktop.webp 1x, img/bike03-desktop@2x.webp 2x" type="image/webp">
-            <img width="342" height="512" alt="Детский велосипед" srcset="img/bike03-desktop.jpg 1x, img/bike03-desktop@2x.jpg 2x">
-          </picture>
-          <h3>Детский велосипед</h3>
-        </li>
-      </ul>
+      <div class="bicycles__container">
+        <h2><a name="bicycles">Виды велосипедов</a></h2>
+        <ul class="bicycles__list">
+          <li class="bicycles__item bicycles__item--road">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="img/bike01-tablet.webp 1x, img/bike01-tablet@2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/bike01-desktop.webp 1x, img/bike01-desktop@2x.webp 2x"
+                type="image/webp">
+              <!--<source media="(max-width: 1023px)" srcset="img/bike01-tablet.jpg 1x, img/bike01-tablet@2x.jpg 2x">-->
+              <img width="342" height="503" alt="Дорожный велосипед"
+                srcset="img/bike01-desktop.jpg 1x, img/bike01-desktop@2x.jpg 2x">
+            </picture>
+            <h3>Дорожный велосипед</h3>
+          </li>
+          <li class="bicycles__item bicycles__item--mountain">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="img/bike02-tablet.webp 1x, img/bike02-tablet@2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/bike02-desktop.webp 1x, img/bike02-desktop@2x.webp 2x"
+                type="image/webp">
+              <img width="342" height="586" alt="Горный велосипед"
+                srcset="img/bike02-desktop.jpg 1x, img/bike02-desktop@2x.jpg 2x">
+            </picture>
+            <h3>Горный велосипед</h3>
+          </li>
+          <li class="bicycles__item bicycles__item--сhildren">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="img/bike03-tablet.webp 1x, img/bike03-tablet@2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/bike03-desktop.webp 1x, img/bike03-desktop@2x.webp 2x"
+                type="image/webp">
+              <img width="342" height="512" alt="Детский велосипед"
+                srcset="img/bike03-desktop.jpg 1x, img/bike03-desktop@2x.jpg 2x">
+            </picture>
+            <h3>Детский велосипед</h3>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="video">
       <h2><a name="video">Видео про велосипеды</a></h2>
