@@ -11,7 +11,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 30px 0 14px;
+    padding: 30px 0 34px 0;
     margin-top: 73px;
   }
 }
@@ -44,25 +44,27 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 3.5%;
+  row-gap: 20px;
+  padding: 0 30px;
 
   @media (max-width: $desktop-width) {
     padding: 0 64px;
     justify-content: space-between;
+    column-gap: 0;
     row-gap: 29px;
+  }
+
+  @media(min-width: $tablet-desktop) {
+    column-gap: 20px;
+  }
+
+  @media(min-width: $desktop-width) {
+    column-gap: 3.6%;
   }
 
   @media(max-width: $tablet-width) {
     padding: 0 25px;
-    gap: 0;
-  }
-}
-
-.bicycles img {
-  border-radius: 10px;
-
-  @media (max-width: $desktop-width) {
-    width: 270px;
-    height: 300px;
+    gap: 20px;
   }
 }
 
@@ -72,10 +74,6 @@
   @media (max-width: $desktop-width) {
     width: 270px;
     margin: 0 auto;
-  }
-
-  @media(max-width: $tablet-width) {
-    margin-bottom: 20px;
   }
 }
 
@@ -164,5 +162,14 @@
       top: -19px;
       right: -15px;
     }
+  }
+}
+
+.bicycles img {
+  border-radius: 10px;
+
+  @media (max-width: $desktop-width) {
+    width: 270px;
+    height: 300px;
   }
 }

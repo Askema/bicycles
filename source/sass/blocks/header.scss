@@ -242,6 +242,7 @@
   border: 0;
   border-radius: 6px;
   @include text(15px, 21px, $black, 600);
+  cursor: pointer;
 
   &:hover,
   &:focus {
