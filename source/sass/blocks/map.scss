@@ -28,11 +28,11 @@
 .map iframe {
   width: 957px;
   height: 530px;
-  background: url('../img/map.jpg') no-repeat center;
+  background: url("../img/map.jpg") no-repeat center;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background: url('../img/map@2x.jpg') no-repeat center;
+    background: url("../img/map@2x.jpg") no-repeat center;
     background-size: cover;
   }
 
