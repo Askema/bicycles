@@ -1,7 +1,6 @@
-'use strict';
-var toggle = document.querySelector('.header__toggle');
-var navList = document.querySelector('.nav__list');
-var body = document.querySelector('.body');
+const toggle = document.querySelector('.header__toggle');
+const navList = document.querySelector('.nav__list');
+const body = document.querySelector('.body');
 
 toggle.classList.add('header__toggle--working');
 toggle.classList.add('header__toggle--open');
