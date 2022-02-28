@@ -82,24 +82,33 @@
         <ul class="bicycles__list">
           <li class="bicycles__item bicycles__item--road">
             <picture>
+              <!-- 1x: 270px x 300px; 2x: 540px x 600px -->
               <source media="(max-width: 1023px)" srcset="img/bike01-tablet.webp 1x, img/bike01-tablet@2x.webp 2x" type="image/webp">
+              <!-- 1x: 342px x 503px; 2x: 684px x 1006px -->
               <source media="(min-width: 1024px)" srcset="img/bike01-desktop.webp 1x, img/bike01-desktop@2x.webp 2x" type="image/webp">
+              <!-- 1x: 342px x 503px; 2x: 684px x 1006px -->
               <img width="342" height="503" alt="Дорожный велосипед" srcset="img/bike01-desktop.jpg 1x, img/bike01-desktop@2x.jpg 2x" src="img/bike01-desktop.jpg">
             </picture>
             <h3>Дорожный велосипед</h3>
           </li>
           <li class="bicycles__item bicycles__item--mountain">
             <picture>
+              <!-- 1x: 270px x 300px; 2x: 540px x 600px -->
               <source media="(max-width: 1023px)" srcset="img/bike02-tablet.webp 1x, img/bike02-tablet@2x.webp 2x" type="image/webp">
+              <!-- 1x: 342px x 503px; 2x: 684px x 1006px -->
               <source media="(min-width: 1024px)" srcset="img/bike02-desktop.webp 1x, img/bike02-desktop@2x.webp 2x" type="image/webp">
+              <!-- 1x: 342px x 503px; 2x: 684px x 1006px -->
               <img width="342" height="586" alt="Горный велосипед" srcset="img/bike02-desktop.jpg 1x, img/bike02-desktop@2x.jpg 2x" src="img/bike02-desktop.jpg">
             </picture>
             <h3>Горный велосипед</h3>
           </li>
           <li class="bicycles__item bicycles__item--сhildren">
             <picture>
+              <!-- 1x: 270px x 300px; 2x: 540px x 600px -->
               <source media="(max-width: 1023px)" srcset="img/bike03-tablet.webp 1x, img/bike03-tablet@2x.webp 2x" type="image/webp">
+              <!-- 1x: 342px x 503px; 2x: 684px x 1006px -->
               <source media="(min-width: 1024px)" srcset="img/bike03-desktop.webp 1x, img/bike03-desktop@2x.webp 2x" type="image/webp">
+              <!-- 1x: 342px x 503px; 2x: 684px x 1006px -->
               <img width="342" height="512" alt="Детский велосипед" srcset="img/bike03-desktop.jpg 1x, img/bike03-desktop@2x.jpg 2x" src="img/bike03-desktop.jpg">
             </picture>
             <h3>Детский велосипед</h3>
@@ -133,7 +142,7 @@
         <h2 class="visually-hidden">Контакты</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <a href="mailto:puteshestviemechta@gmail.ru" class="contacts__link">
+            <a href="mailto:puteshestviemechta@gmail.ru">
               <svg width="26" height="20" viewBox="0 0 26 20">
                 <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
               </svg>
@@ -141,7 +150,7 @@
             </a>
           </li>
           <li class="contacts__item contacts__item--tel">
-            <a href="tel:+7(499)-784-684-46" class="contacts__link">
+            <a href="tel:+7(499)-784-684-46">
               <svg width="22" height="23" viewBox="0 0 22 23">
                 <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
               </svg>
@@ -152,7 +161,7 @@
       </div>
     </section>
   </footer>
-  <script src="js/script.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
