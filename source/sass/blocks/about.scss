@@ -28,8 +28,8 @@
 }
 
 .about p {
-  margin-top: 15px;
   @include text(22px, 34px, $black, 400);
+  margin-top: 15px;
   letter-spacing: -0.5px;
 
   @media (max-width: $tablet-width) {

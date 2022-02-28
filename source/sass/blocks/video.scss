@@ -13,7 +13,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 62px 15px 132px;;
+    padding: 62px 15px 132px;
     margin-bottom: 105px;
   }
 }
@@ -87,16 +87,16 @@
 
 .video__wrapper {
   position: absolute;
-  width: 64.514%;
+  width: 64.51%;
   max-width: 929px;
   height: 522px;
-  background: $black url('../img/videoPreview.jpg') no-repeat center;
+  background: $black url("../img/videoPreview.jpg") no-repeat center;
   top: 77%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   @media (min-resolution: 2dppx) {
-    background: $black url('../img/videoPreview@2x.jpg') no-repeat center;
+    background: $black url("../img/videoPreview@2x.jpg") no-repeat center;
     background-size: cover;
   }
 

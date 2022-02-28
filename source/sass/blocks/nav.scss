@@ -12,7 +12,7 @@
   flex-wrap: wrap;
   position: relative;
   padding: 21px 24px 10px 21px;
-  column-gap: 16.1%;;
+  column-gap: 16.1%;
 
   &::after {
     @media (max-width: $desktop-width) {
@@ -53,7 +53,6 @@
 }
 
 .nav__item {
-
   @media (max-width: $desktop-width) {
     text-align: left;
     background-color: $mobile-nav;
@@ -77,6 +76,7 @@
 
   @media (max-width: $desktop-width) {
     position: relative;
+
     @include text(20px, 28px, $grey, 400);
     padding: 17px 35px 17px 16px;
     width: 100%;
@@ -89,7 +89,7 @@
       height: 25px;
       right: 16px;
       top: 17px;
-      background: url('../img/arrow.svg') no-repeat center;
+      background: url("../img/arrow.svg") no-repeat center;
     }
   }
 }

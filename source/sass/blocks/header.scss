@@ -1,8 +1,8 @@
 .header {
-  background: url('../img/headerBike.jpg') no-repeat center top, linear-gradient(#0D0D0D, #101010, #202020);
+  background: url("../img/headerBike.jpg") no-repeat center top, linear-gradient(#0d0d0d, #101010, #202020);
 
   @media (min-resolution: 2dppx) {
-    background: url('../img/headerBike@2x.jpg') no-repeat center, linear-gradient(#0D0D0D, #101010, #202020);
+    background: url("../img/headerBike@2x.jpg") no-repeat center, linear-gradient(#0d0d0d, #101010, #202020);
     background-size: cover;
   }
 
@@ -38,11 +38,11 @@
   }
 
   &--open {
-    background: $main-color url('../img/menu.svg') no-repeat center;
+    background: $main-color url("../img/menu.svg") no-repeat center;
   }
 
   &--close {
-    background: $white url('../img/cross.svg') no-repeat center;
+    background: $white url("../img/cross.svg") no-repeat center;
   }
 
   &:hover,
@@ -76,10 +76,10 @@
 
   @media (max-width: $desktop-width) {
     text-align: center;
-    background: url('../img/headerBike.jpg') no-repeat center top, linear-gradient(#0D0D0D, #101010, #202020);
+    background: url("../img/headerBike.jpg") no-repeat center top, linear-gradient(#0d0d0d, #101010, #202020);
 
     @media (min-resolution: 2dppx) {
-      background: url('../img/headerBike@2x.jpg') no-repeat, linear-gradient(#0D0D0D, #101010, #202020);
+      background: url("../img/headerBike@2x.jpg") no-repeat, linear-gradient(#0d0d0d, #101010, #202020);
       background-size: cover;
       background-position: 50%;
     }
@@ -92,10 +92,10 @@
 
   @media (max-width: $tablet-width) {
     text-align: center;
-    background: url('../img/headerBike-mobile.jpg') no-repeat center top, linear-gradient(#0D0D0D, #101010, #202020);
+    background: url("../img/headerBike-mobile.jpg") no-repeat center top, linear-gradient(#0d0d0d, #101010, #202020);
 
     @media (min-resolution: 2dppx) {
-      background: url('../img/headerBike-mobile@2x.jpg') no-repeat center top, linear-gradient(#0D0D0D, #101010, #202020);
+      background: url("../img/headerBike-mobile@2x.jpg") no-repeat center top, linear-gradient(#0d0d0d, #101010, #202020);
       background-size: cover;
       background-position: 50%;
     }
@@ -147,10 +147,12 @@
 
 .header h1 {
   margin: 28px 0 24px 0;
+
   @include text(46px, 64px, $white, 700);
 
   @media (max-width: $desktop-width) {
     margin: 28px 0 20px 0;
+
     @include text(30px, 42px, $white, 700);
   }
 }
@@ -170,6 +172,7 @@
 .header__form-wrapper p {
   margin: 4px 0 20px 0;
   text-align: center;
+
   @include text(17px, 28px, $white, 600);
 
   @media (max-width: $desktop-width) {
@@ -207,14 +210,15 @@
   }
 
   &::placeholder {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
+
     @include text(15px, 24px, $placeholder, 400);
     opacity: 0.5;
   }
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+    appearance: none;
     margin: 0;
   }
 
@@ -231,8 +235,6 @@
     }
   }
 
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
   appearance: textfield;
 }
 
@@ -241,6 +243,7 @@
   height: 51px;
   border: 0;
   border-radius: 6px;
+
   @include text(15px, 21px, $black, 600);
   cursor: pointer;
 
